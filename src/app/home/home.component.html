@@ -1,0 +1,9 @@
+<div class="wrapper-cart">
+  <h1 class="cart--title">Shopping cart</h1>
+  <div>
+    <productItem *ngIf="isVisible" [products]="products" (dataEvent)="handleDelete($event)">
+    </productItem>
+  </div>
+  <button (click)="handleVisible()">Toggle Product List</button>
+  <!-- <button [RouteLink]="['/create']">Create</button> -->
+</div>

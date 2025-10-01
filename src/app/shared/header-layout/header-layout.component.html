@@ -1,0 +1,19 @@
+<div class="group-header">
+  <div class="group-logo">
+    <div class="logo">
+      <img src="banner/photo1.jpg" alt="Banner">
+      <i class="fa-solid fa-house"></i>
+    </div>
+    <a [routerLink]="['/']">Trang chủ</a>
+  </div>
+
+  <div class="group-navigation">
+    <div>Giỏ hàng {{ title.name }}</div>
+    <div>
+      <a [routerLink]="['/create']">
+        Mua hàng
+      </a>
+    </div>
+  </div>
+  <!-- <button [disabled]="isDisabled" (click)="handleClick()">Click</button> -->
+</div>
